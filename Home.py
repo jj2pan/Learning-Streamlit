@@ -32,12 +32,12 @@ def main():
     st.divider()
     # st.write("---")
 
-    df = pd.read_csv("/Users/kiman/Documents/data.csv")
-    st.dataframe(df)
-
-    st.table(df.head())
-
-    edited_df = st.data_editor(df)
+    # df = pd.read_csv("/Users/kiman/Documents/data.csv")
+    # st.dataframe(df)
+    #
+    # st.table(df.head())
+    #
+    # edited_df = st.data_editor(df)
 
     st.metric("Temperature in °C", 26, 2)
     st.metric("Rainfall in mm", 1400, -350)
@@ -102,15 +102,15 @@ def main():
 
     # st.camera_input("Take your portrait : ")
 
-    st.image("img/_DSC0055.JPG", width=250)
-
-    cl1, cl2, cl3 = st.columns(3)
-    with cl1:
-        st.image("img/codecamp.png", width=200)
-    with cl2:
-        st.image("img/git.png", width=200)
-    with cl3:
-        st.image("img/dp.jpg", width=200)
+    # st.image("img/_DSC0055.JPG", width=250)
+    #
+    # cl1, cl2, cl3 = st.columns(3)
+    # with cl1:
+    #     st.image("img/codecamp.png", width=200)
+    # with cl2:
+    #     st.image("img/git.png", width=200)
+    # with cl3:
+    #     st.image("img/dp.jpg", width=200)
 
     if st.button("Sign in"):
         user_details()
