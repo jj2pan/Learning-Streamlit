@@ -1,7 +1,7 @@
 import streamlit as st
 
 def main():
-    st.write("This is the contact page")
+    st.title("This is the contact page")
 
 if __name__ == "__main__":
     main()
